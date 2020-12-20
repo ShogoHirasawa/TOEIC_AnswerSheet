@@ -24,7 +24,7 @@
     <!-- ↑ここまでが各項目名 -->
 
    <!--選択肢スタート↓-->
-   <div class="row">
+   <div class="row" id = content>
     <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-flex align-items-center justify-content-center border">1</div>
     <div class="d-flex align-items-center justify-content-center col-6 col-sm-6 col-md-6 col-lg-6 border">
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -52,18 +52,30 @@
     </div>
 </div>
    <!--選択肢終了↑ -->
- 
+   <script>"index.js"</script>
+   
+  <script language="javascript" type="text/javascript">
+    const content = document.getElementById('content');
+    var div = document.createElement('div');
+    div.classList.add('addClass');
+    console.log(div);
+    document.getElementById("content").appendChild(div);
+    div.innerHTML=content;// ここまでの処理はhtmlには渡っているはずなんだけど、webページを見てみると[object HTMLDivElement]とでてしまう
+
+
+
+  </script>
 
 
 
 
 
-
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>index.js</script>
+    
   </body>
 </html>
